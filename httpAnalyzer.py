@@ -1,5 +1,14 @@
 import requests
+import string
+import time
 
-r = requests.get("http://docs.python-requests.org/en/latest/user/quickstart/")
-print r.headers
-print r.content
+urlListFile = open('./urlList.txt', 'r')
+urlList = urlListFile.read()
+urlList = string.split(urlList, '\n')
+
+for url in urlList:
+	#print url
+	r = requests.get(url)
+	print r.headers
+	#print r.content
+	time.sleep(1)
