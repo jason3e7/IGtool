@@ -11,16 +11,17 @@ urlListFile.close()
 IGFile = open('./IGreport.csv', 'wb')
 IGWriter = csv.writer(IGFile)
 
-data = [['host']]
+data = [['host', 'server']]
 IGWriter.writerows(data)
 
 for url in urlList:
 	#print url
-	#r = requests.get(url)
-	#print r.headers
+	print 'analyze : %s' % url
+	r = requests.get(url)
+	#print r.headers['Server']
 	#print r.content
-	data = [[url]]
+	data = [[url, r.headers['Server']]]
 	IGWriter.writerows(data)
-	#time.sleep(1)
+	time.sleep(0.5)
 
 IGFile.close()  

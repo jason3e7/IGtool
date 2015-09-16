@@ -1,3 +1,10 @@
+https://www.owasp.org/index.php/Testing_Information_Gathering
 https://www.google.com.tw/
-http://docs.python-requests.org/en/latest/user/quickstart/
+https://tw.yahoo.com/
 https://github.com/jason3e7/IGtool
+http://www.python-requests.org
+http://docs.python-requests.org/en/latest/user/quickstart/
+http://httpd.apache.org/
+http://nginx.org/
+https://www.iis.net/
+http://www.oracle.com/us/products/middleware/cloud-app-foundation/weblogic/overview/index.html
